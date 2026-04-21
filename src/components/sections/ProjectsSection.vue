@@ -42,8 +42,13 @@ watch(
 )
 
 function setProjectCategory(category) {
+  if (activeProjectCategory.value === category.id) {
+    return
+  }
+
   activeProjectCategory.value = category.id
 }
+
 </script>
 
 <template>
@@ -70,7 +75,11 @@ function setProjectCategory(category) {
       </button>
     </div>
 
-    <div class="mt-10 grid gap-x-6 gap-y-12 lg:mt-12 lg:grid-cols-2">
+    <TransitionGroup
+      name="project-card"
+      tag="div"
+      class="relative mt-10 grid gap-x-6 gap-y-12 lg:mt-12 lg:grid-cols-2"
+    >
       <ProjectCard
         v-for="project in filteredProjects"
         :key="project.title"
@@ -78,6 +87,6 @@ function setProjectCategory(category) {
         :image-alt-label="content.imageAltLabel"
         :project="project"
       />
-    </div>
+    </TransitionGroup>
   </section>
 </template>

@@ -1,3 +1,16 @@
+import adpDiaImage1 from "../assets/projects/adp-dia/548608222_18264181363304856_7097300522165478111_n.jpg";
+import adpDiaImage2 from "../assets/projects/adp-dia/549484131_18264181381304856_1621171512432320843_n.jpg";
+import adpDiaImage3 from "../assets/projects/adp-dia/549650530_18264181378304856_3722004945578060094_n.jpg";
+import caparolImage1 from "../assets/projects/caparol/4378f3b5-daf3-4816-99a1-dd3a0031da56.jpeg";
+import caparolImage2 from "../assets/projects/caparol/d14f9986-6c04-4e44-87d5-8bb90871e3c7.jpeg";
+import euroconsImage1 from "../assets/projects/eurocons/f169966d-55b8-4e0c-ba18-24bbf8e9423f.jpeg";
+import euroconsImage2 from "../assets/projects/eurocons/2eb5cc79-02e2-4676-8ca4-5dd3aa14a1df.jpeg";
+import euroconsImage3 from "../assets/projects/eurocons/b0969d8b-4d6d-4c2c-b4db-e8657ef55f37.jpeg";
+import euroconsImage4 from "../assets/projects/eurocons/c2ddbac5-eeb8-4f59-90b3-a17a98c5b604.jpeg";
+import vreauImage1 from "../assets/projects/vreau/562952958_18268475050304856_5528007544543473249_n.jpg";
+import vreauImage2 from "../assets/projects/vreau/565500058_18268475053304856_8198870660212880753_n.jpg";
+import vreauImage3 from "../assets/projects/vreau/e4f474e2-cedf-4db4-9e5e-121fd853baf6.jpeg";
+
 const profileLinks = {
   avatar:
     "https://maximciubari.netlify.app/static/media/avatar.7dfa7488bf2b41fc7f6a.jpeg",
@@ -31,8 +44,7 @@ const projects = [
     year: "2025",
     categories: ["web-development"],
     href: "https://adp-dia.com/ru",
-    image:
-      "src/assets/projects/adp-dia/548608222_18264181363304856_7097300522165478111_n.jpg",
+    images: [adpDiaImage1, adpDiaImage2, adpDiaImage3],
     // status: "În dezvoltare",
     partner: "Make IT",
     partnerLink: "https://makeit.md/",
@@ -42,8 +54,7 @@ const projects = [
     year: "2025",
     categories: ["web-development", "marketing"],
     href: "https://vreau.md",
-    image:
-      "src/assets/projects/vreau/562952958_18268475050304856_5528007544543473249_n.jpg",
+    images: [vreauImage1, vreauImage2, vreauImage3],
     partner: "Make IT",
     partnerLink: "https://makeit.md/",
   },
@@ -52,8 +63,7 @@ const projects = [
     year: "2023",
     categories: ["branding", "web-development", "marketing"],
     href: "http://eurocons.md",
-    image:
-      "src/assets/projects/eurocons/f169966d-55b8-4e0c-ba18-24bbf8e9423f.jpeg",
+    images: [euroconsImage1, euroconsImage2, euroconsImage3, euroconsImage4],
     partner: "Make IT",
     partnerLink: "https://makeit.md/",
   },
@@ -62,8 +72,7 @@ const projects = [
     year: "2023",
     categories: ["web-development", "marketing"],
     href: "https://termoizolatii.md/",
-    image:
-      "src/assets/projects/caparol/4378f3b5-daf3-4816-99a1-dd3a0031da56.jpeg",
+    images: [caparolImage1, caparolImage2],
     partner: "Make IT",
     partnerLink: "https://makeit.md/",
   },
