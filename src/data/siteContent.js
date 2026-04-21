@@ -110,21 +110,30 @@ export const siteContent = {
       company: 'Freelancer',
       role: 'Full Stack Developer',
       period: '2024 - Present',
+      location: 'Moldova',
+      type: 'Freelance',
       focus: 'Laravel, Vue.js, React, MySQL, JavaScript',
+      skills: ['Laravel', 'Vue.js', 'React', 'MySQL', 'JavaScript'],
       details: 'Building client web products from backend architecture to polished user interfaces.',
     },
     {
       company: 'Edifecs',
       role: 'DevOps Developer',
       period: '2021 - 2025',
+      location: 'Remote',
+      type: 'Full-Time',
       focus: 'Linux, Docker, YAML, CI/CD',
+      skills: ['Linux', 'Docker', 'YAML', 'CI/CD'],
       details: 'Maintained delivery workflows, automation, containers, and Unix-based systems.',
     },
     {
       company: 'Enter',
       role: 'Content Manager',
       period: '2020 - 2021',
+      location: 'Chisinau',
+      type: 'Full-Time',
       focus: 'Content operations, QA, Photoshop, 1C',
+      skills: ['Content QA', 'Photoshop', '1C', 'Publishing'],
       details: 'Managed website content, tested updates, and supported digital publishing workflows.',
     },
   ],
@@ -135,14 +144,24 @@ export const siteContent = {
         'A short project brief, goals, timeline, required features, access to existing assets, and any technical constraints.',
     },
     {
-      question: 'Can you work on both frontend and backend?',
+      question: 'What do you charge for your services?',
       answer:
-        'Yes. I can cover Laravel backend work, Vue or React interfaces, integrations, deployment, and ongoing improvements.',
+        'Pricing depends on scope, complexity, timeline, and the level of support needed. After a short consultation I can provide a clear estimate and delivery plan.',
     },
     {
-      question: 'Do you support existing projects?',
+      question: 'Can you work within existing technical guidelines?',
       answer:
-        'Yes. I can audit, refactor, improve performance, add features, or stabilize existing Laravel and frontend projects.',
+        'Yes. I can adapt to existing architecture, coding standards, design systems, deployment workflows, and team conventions.',
+    },
+    {
+      question: 'Do you offer ongoing support after project completion?',
+      answer:
+        'Yes. I can help with improvements, maintenance, bug fixes, performance checks, new features, and deployment support after launch.',
+    },
+    {
+      question: 'How do we get started?',
+      answer:
+        'Send a short description of the project, goals, deadlines, and any existing links or assets. I will review everything and suggest the next practical steps.',
     },
   ],
   socials: [

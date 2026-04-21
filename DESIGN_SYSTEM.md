@@ -7,8 +7,8 @@ Reference direction: Paul Andrew style portfolio, reinterpreted as an original, 
 - Use a premium monochrome visual language with strong contrast, generous whitespace, and restrained decorative elements.
 - Do not copy the reference exactly. Reuse its structure, rhythm, and interaction logic while adapting content, spacing, and visual hierarchy.
 - Keep the interface minimalist, editorial, and easy to scan.
-- Use bold typography only for major headings and numeric proof points.
-- Avoid oversized text. Large headings must stay within readable portfolio proportions.
+- Use restrained typography for section headings; avoid heavy/bold title treatment unless it is the hero.
+- Avoid oversized text. Large headings must stay within readable portfolio proportions and align left.
 - Prefer fewer sections with clearer purpose over many decorative blocks.
 - Keep all page sections visually connected through consistent spacing, radius, color, and typography.
 
@@ -88,7 +88,7 @@ Reference direction: Paul Andrew style portfolio, reinterpreted as an original, 
 | Token | Desktop | Tablet | Mobile | Weight | Usage |
 |---|---:|---:|---:|---:|---|
 | Display / H1 | 72px to 88px | 56px to 68px | 42px to 54px | 600 | Hero headline |
-| H2 | 52px to 64px | 42px to 52px | 34px to 44px | 600 | Section titles |
+| H2 | 40px to 55px | 34px to 46px | 32px to 40px | 500 | Section titles |
 | H3 | 30px to 36px | 28px to 32px | 24px to 30px | 600 | Card titles |
 | H4 | 22px to 26px | 21px to 24px | 20px to 22px | 600 | Subsection titles |
 | Body Large | 17px to 18px | 16px to 17px | 16px | 400 to 500 | Hero paragraph |
@@ -102,8 +102,9 @@ Reference direction: Paul Andrew style portfolio, reinterpreted as an original, 
 - Use line-height `0.92` to `1.05` for large headings.
 - Use line-height `1.45` to `1.65` for paragraphs.
 - Use negative letter spacing only on large headings.
-- Display headings must use `font-weight: 600` by default. Avoid `700` and `800` for titles because they make the layout feel heavy and oversized.
+- Display section headings must use `font-weight: 500` by default. Avoid `700` and `800` for titles because they make the layout feel heavy and oversized.
 - Use `font-weight: 700` only for rare emphasis, not for primary page titles, section titles, project titles, or metric numbers.
+- Section headings such as `Take a look at my works`, `How can I help you`, `Experience in my career`, and `Frequently asked questions` must be left-aligned, smaller than the hero, and visually lighter than bold display titles.
 - Body text line length should stay between 55 and 80 characters.
 - Avoid using all caps except for small metadata labels.
 - Do not scale typography endlessly on large screens; increase whitespace instead.
@@ -284,6 +285,8 @@ Explain services without creating too much static copy.
 - Inactive cards use white or soft gray backgrounds.
 - Service rows must stay compact and minimal: reduced padding, low card height, and no oversized typography.
 - Service rows use clear horizontal distribution on desktop: title on the left, tag/description content on the right with generous `space-between` feel.
+- Service row content aligns to the top on desktop; do not vertically center title and content when the description is open.
+- Keep a generous horizontal gap between the service title column and the tag/description column.
 - Service titles use `font-weight: 600`, compact line-height, and approximately `22px` to `26px` sizing in the row.
 - Tags use small pill styling with compact padding and approximately `12px` to `13px` text.
 - Keep descriptions concise.
@@ -302,13 +305,19 @@ Show career progression and credibility.
 - CTA.
 - Timeline rail.
 - Role cards.
-- Company, focus, date, details.
+- Company logo, role, details, skill pills, date, and work format.
 
 ### Rules
 
-- Desktop uses vertical timeline rail beside cards.
-- Cards use soft background and light border.
-- Metadata appears as small pills.
+- Desktop uses vertical timeline rail beside cards, positioned in the left gutter between the profile card and content.
+- Timeline rail animates with scroll progress; use a dark fill line over a muted rail and active dot states.
+- Dot markers align with the top area of each experience card.
+- Cards use soft background, light border, and compact spacing.
+- Each card includes a muted company logo on the right; temporary placeholder logos are acceptable until real brand assets are available.
+- Skills used in each job appear as small pills in the main card body; work format appears beside the period on the right.
+- Period and work-format pills use small Lucide icons with `stroke-width: 1`.
+- Period and work-format pills must use `white-space: nowrap` and should not wrap icon/text onto separate lines.
+- Period and work-format pills must stay on one horizontal row on desktop; do not allow the pill group itself to wrap.
 - Mobile can remove the timeline rail for readability.
 
 ## FAQ Accordion
@@ -320,32 +329,18 @@ Answer common objections before contact.
 ### Structure
 
 - Question row.
-- Plus icon.
+- Plus/minus icon.
 - Expandable answer.
 
 ### Rules
 
 - Use keyboard accessible accordion behavior.
+- First FAQ is open by default.
+- FAQ heading is left-aligned and constrained to a compact text width.
+- FAQ items use full-width rounded cards with light borders and compact vertical padding.
+- FAQ opening animation uses max-height, opacity, and subtle vertical transform with premium easing.
 - Keep questions practical.
 - Do not overload answers with long paragraphs.
-
-## Newsletter Form
-
-### Purpose
-
-Secondary conversion in footer.
-
-### Structure
-
-- Email input.
-- Submit button.
-- Success or error state.
-
-### Rules
-
-- Form should not compete with primary booking CTA.
-- Use clear validation states.
-- Keep placeholder text simple.
 
 ## Page Structure
 
@@ -476,14 +471,15 @@ Convert visitors after they have reviewed the page.
 - Booking/contact CTA.
 - Trust bullets.
 - Social links.
-- Newsletter form.
 - Footer credits and legal links.
 
 ### Layout
 
 - Two-column footer on desktop.
 - Single-column footer on mobile.
-- Primary CTA should be more prominent than newsletter.
+- Do not include a newsletter block unless explicitly requested.
+- Footer uses top and bottom divider lines, large CTA content on the left, social links on the right, and a three-column credit row.
+- Footer trust bullets and social links use Lucide icons with muted gray strokes, black hover state where interactive, and `stroke-width: 1`.
 
 ## Responsive Strategy
 

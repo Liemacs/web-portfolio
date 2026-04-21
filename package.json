@@ -10,11 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
     "@vitejs/plugin-vue": "^6.0.2",
-    "vite": "^8.0.8",
-    "vue": "^3.5.25",
+    "lucide-vue-next": "^1.0.0",
     "tailwindcss": "^4.1.18",
-    "@tailwindcss/vite": "^4.1.18"
-  },
-  "devDependencies": {}
+    "vite": "^8.0.8",
+    "vue": "^3.5.25"
+  }
 }
