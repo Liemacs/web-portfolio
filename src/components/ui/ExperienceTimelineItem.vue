@@ -1,8 +1,6 @@
 <script setup>
 import { BriefcaseBusiness, CalendarDays } from 'lucide-vue-next'
 
-import brandLogo from '../../assets/brand-1.svg'
-
 defineProps({
   isActive: {
     type: Boolean,
@@ -16,7 +14,7 @@ defineProps({
 </script>
 
 <template>
-  <article class="relative rounded-[24px] border border-gray-200 bg-white px-5 py-5 transition duration-300 hover:border-black/20 hover:shadow-[0_18px_44px_rgba(17,17,17,0.04)] sm:px-6 lg:min-h-[150px]">
+  <article class="group relative rounded-[24px] border border-gray-200 bg-white px-5 py-5 transition duration-300 hover:border-black/20 hover:shadow-[0_18px_44px_rgba(17,17,17,0.04)] sm:px-6 lg:min-h-[150px]">
     <span
       class="absolute -left-[45px] top-7 hidden h-4 w-4 rounded-full border-[3px] bg-white transition duration-300 lg:block"
       :class="isActive ? 'border-black shadow-[0_0_0_6px_rgba(17,17,17,0.05)]' : 'border-gray-300 shadow-[0_0_0_5px_rgba(17,17,17,0.03)]'"
@@ -47,9 +45,9 @@ defineProps({
       </div>
 
       <div class="flex h-full flex-col gap-8 lg:items-end lg:justify-between">
-        <div class="flex items-center gap-2 opacity-70 grayscale">
+        <div class="flex items-center gap-2 opacity-70 grayscale transition duration-300 group-hover:opacity-100 group-hover:grayscale-0 group-focus-within:opacity-100 group-focus-within:grayscale-0">
           <img
-            :src="brandLogo"
+            :src="job.brandLogo"
             alt=""
             class="h-7 w-auto max-w-[126px] object-contain"
           >

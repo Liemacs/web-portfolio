@@ -22,12 +22,20 @@ const activeProjectCategory = ref(props.categories[0]?.id ?? 'all')
 const categoryLabels = computed(() =>
   Object.fromEntries(props.categories.map((category) => [category.id, category.label])),
 )
+const orderedProjects = computed(() =>
+  [...props.projects].sort((firstProject, secondProject) => {
+    const firstOrder = Number.isFinite(firstProject.order) ? firstProject.order : Number.MIN_SAFE_INTEGER
+    const secondOrder = Number.isFinite(secondProject.order) ? secondProject.order : Number.MIN_SAFE_INTEGER
+
+    return secondOrder - firstOrder
+  }),
+)
 const filteredProjects = computed(() => {
   if (activeProjectCategory.value === 'all') {
-    return props.projects
+    return orderedProjects.value
   }
 
-  return props.projects.filter((project) =>
+  return orderedProjects.value.filter((project) =>
     project.categories.includes(activeProjectCategory.value),
   )
 })
@@ -82,7 +90,7 @@ function setProjectCategory(category) {
     >
       <ProjectCard
         v-for="project in filteredProjects"
-        :key="project.title"
+        :key="project.id"
         :category-labels="categoryLabels"
         :image-alt-label="content.imageAltLabel"
         :project="project"

@@ -51,7 +51,7 @@ function showNextImage() {
 }
 
 watch(
-  () => props.project.title,
+  () => props.project.id,
   () => {
     activeImageIndex.value = 0;
   },

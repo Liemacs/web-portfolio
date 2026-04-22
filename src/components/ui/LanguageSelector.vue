@@ -138,7 +138,7 @@ onBeforeUnmount(() => {
           type="button"
           class="flex w-full items-center justify-between rounded-[13px] px-3 py-2.5 text-left text-[13px] font-semibold transition hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           :class="[
-            selectedLanguage === language.code ? 'bg-black text-white hover:bg-black' : 'text-black',
+            selectedLanguage === language.code ? 'bg-black text-white hover:text-gray-100 hover:bg-olive-900' : 'text-black',
             language.disabled ? 'cursor-not-allowed opacity-50 hover:bg-transparent' : '',
           ]"
           :disabled="language.disabled"
