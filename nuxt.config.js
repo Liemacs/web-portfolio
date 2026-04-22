@@ -24,6 +24,9 @@ export default defineNuxtConfig({
   devtools: {
     enabled: false,
   },
+  experimental: {
+    serverAppConfig: false,
+  },
   dir: {
     public: publicDir,
   },
